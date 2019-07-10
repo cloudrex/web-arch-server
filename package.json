@@ -1,0 +1,17 @@
+{
+    "name": "web-arch-server",
+    "version": "1.0.0",
+    "description": "Backend server for WebArch",
+    "main": "dist/server.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && node dist/server.js"
+    },
+    "keywords": [],
+    "author": "Atlas <cloudrex@outlook.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^12.6.2",
+        "typescript": "^3.5.3"
+    }
+}
