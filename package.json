@@ -11,6 +11,7 @@
     "author": "Atlas <cloudrex@outlook.com>",
     "license": "MIT",
     "devDependencies": {
+        "@types/graphql": "^14.2.2",
         "@types/node": "^12.6.2",
         "typescript": "^3.5.3"
     },
