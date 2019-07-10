@@ -1,9 +1,9 @@
-const {ApolloServer, gql} = require("apollo-server");
+import {ApolloServer, gql} from "apollo-server";
 
 // This is a (sample) collection of books we"ll be able to query
 // the GraphQL server for.  A more complete example might fetch
 // from an existing data source like a REST API or database.
-const books = [
+const books: any[] = [
     {
         title: "Harry Potter and the Chamber of Secrets",
         author: "J.K. Rowling",
@@ -43,7 +43,7 @@ const resolvers = {
 // In the most basic sense, the ApolloServer can be started
 // by passing type definitions (typeDefs) and the resolvers
 // responsible for fetching the data for those types.
-const server = new ApolloServer({typeDefs, resolvers});
+const server: ApolloServer = new ApolloServer({typeDefs, resolvers});
 
 // This `listen` method launches a web-server.  Existing apps
 // can utilize middleware options, which we"ll discuss later.
